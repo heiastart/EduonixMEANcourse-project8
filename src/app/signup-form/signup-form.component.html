@@ -1,0 +1,35 @@
+<form action="" (ngSubmit)="onSubmit(signupForm)" #signupForm="ngForm">
+
+  <!-- Name input block -->
+  <div class="form-group">
+    <div class="row">
+      <div class="col">
+        <input class="form-control" type="text" name="firstName" id="" placeholder="First Name" [ngModel]="user.firstName">
+      </div>
+      <div class="col">
+        <input class="form-control" type="text" name="lastName" id="" placeholder="Last Name" [ngModel]="user.lastName">
+      </div>
+    </div>
+  </div>
+
+  <!-- Email input block -->
+  <div class="row">
+    <div class="form-group">
+      <input class="form-control" type="email" name="firstName" id="" placeholder="Email" [ngModel]="user.email">
+    </div>
+  </div>
+
+  <!-- Password input block -->
+  <div class="row">
+    <div class="form-group">
+      <input class="form-control" type="password" name="password" id="" placeholder="Password" [ngModel]="user.password.pwd">
+    </div>
+  </div>
+
+  <!-- Confirm Password input block -->
+  <div class="row">
+    <div class="form-group">
+      <input class="form-control" type="password" name="confirmPW" id="" placeholder="Confirm Password" [ngModel]="user.password.confirmPwd">
+    </div>
+  </div>
+</form>
