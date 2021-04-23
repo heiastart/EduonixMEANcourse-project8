@@ -7,14 +7,20 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { LoginComponent } from './login/login.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { RegisterComponent } from './register/register.component';
+import { TopBarLoginComponent } from './top-bar-login/top-bar-login.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [								
     AppComponent,
     TopBarComponent,
       SignupFormComponent,
       LoginComponent,
-      UserDashboardComponent
+      UserDashboardComponent,
+      RegisterComponent,
+      TopBarLoginComponent,
+      LoginFormComponent
    ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+<form action="" (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm" novalidate>
+
+  <!-- Email input block -->
+  <div class="form-group">
+    <input class="form-control" type="email" name="email" id="" placeholder="Email" [(ngModel)]="loginCredentials.email">
+  </div>
+
+  <!-- Password input block -->
+  <div class="form-group">
+    <input class="form-control" type="password" name="password" id="" placeholder="Password" [(ngModel)]="loginCredentials.pwd">
+  </div>
+
+  <button class="btn btn-primary btn-lg" type="submit">Sign In</button>
+
+  <!-- Lost Password Link -->
+  <div class="form-group">
+    <a href="">Lost Your Password?</a>
+  </div>
+
+</form>
