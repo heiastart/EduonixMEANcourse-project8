@@ -10,11 +10,14 @@ import { NgForm } from '@angular/forms';
 
 export class SignupFormComponent implements OnInit {
   // Class variables (properties)
-  user: User;
+  user = new User('', '', '', '', '');
   
   // Class methods
   onSubmit(signupForm: NgForm) {
     console.log(signupForm.value);
+    console.log(signupForm.value.email);
+    console.log(signupForm.value.firstName);
+    console.log(signupForm.value.lastName);
   }
 
   constructor() { }

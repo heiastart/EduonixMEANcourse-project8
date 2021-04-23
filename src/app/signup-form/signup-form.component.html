@@ -3,26 +3,26 @@
   <!-- Name input block -->
   <div class="form-row">
     <div class="form-group col">
-      <input class="form-control" type="text" name="firstName" id="" placeholder="First Name" [ngModel]="user.firstName">
+      <input class="form-control" type="text" name="firstName" id="" placeholder="First Name" [(ngModel)]="user.firstName">
     </div>
     <div class="form-group col">
-      <input class="form-control" type="text" name="lastName" id="" placeholder="Last Name" [ngModel]="user.lastName">
+      <input class="form-control" type="text" name="lastName" id="" placeholder="Last Name" [(ngModel)]="user.lastName">
     </div>
   </div>
 
   <!-- Email input block -->
   <div class="form-group">
-    <input class="form-control" type="email" name="email" id="" placeholder="Email" [ngModel]="user.email">
+    <input class="form-control" type="email" name="email" id="" placeholder="Email" [(ngModel)]="user.email">
   </div>
 
   <!-- Password input block -->
   <div class="form-group">
-    <input class="form-control" type="password" name="password" id="" placeholder="Password" [ngModel]="user.password.pwd">
+    <input class="form-control" type="password" name="password" id="" placeholder="Password" [(ngModel)]="user.pwd">
   </div>
 
   <!-- Confirm Password input block -->
   <div class="form-group">
-    <input class="form-control" type="password" name="confirmPW" id="" placeholder="Confirm Password" [ngModel]="user.password.confirmPwd">
+    <input class="form-control" type="password" name="confirmPW" id="" placeholder="Confirm Password" [(ngModel)]="user.confirmPwd">
   </div>
 
   <!-- Accept Terms of Use block -->
@@ -33,4 +33,6 @@
     </div>
   </div>
   
+  <button class="btn btn-primary btn-lg" type="submit">Sign Up</button>
+
 </form>
