@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { SignupButtonComponent } from './signup-button/signup-button.component';
+import { LoginComponent } from './login/login.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [				
     AppComponent,
     TopBarComponent,
       SignupFormComponent,
-      SignupButtonComponent
+      SignupButtonComponent,
+      LoginComponent,
+      UserDashboardComponent
    ],
   imports: [
     BrowserModule,
